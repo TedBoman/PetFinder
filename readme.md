@@ -13,10 +13,6 @@ PetApp is an Android application designed to help users find and connect with pe
 * **Moderation Tools:** A dedicated moderator role with privileges to manage and review content on the app.
 * **Push Notifications:** Users receive notifications for new matches and messages.
 
-## Screenshots
-
-*(Placeholder for screenshots of the application)*
-
 ## Tech Stack
 
 * **Kotlin:** The primary programming language for the application.
@@ -47,6 +43,11 @@ PetApp is an Android application designed to help users find and connect with pe
 ## Firebase Configuration
 
 To get the application to run with your own Firebase backend, you need to add your `google-services.json` file to the `app` directory. The file contains the necessary configuration details for your Firebase project. You can download this file from the Firebase console after creating your project.
+
+## Contributors
+[William Bodlund](https://github.com/Bowi1337)
+[Linus Nyzelius](https://github.com/Nyzelius)
+[TedBoman](https://github.com/TedBoman)
 
 ## License
 
