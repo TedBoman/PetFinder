@@ -1,0 +1,83 @@
+<!-- res/layout/filter_dialog_fragment.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="5dp"
+    style="@style/DialogStyle">
+
+    <!-- TextView for displaying the filters function -->
+    <TextView
+        style="@style/TextStyle"
+        android:id="@+id/SpeciesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Select species" />
+
+    <!-- Add your filter controls here, like checkboxes, radio buttons, etc. -->
+    <Spinner
+        android:id="@+id/SpeciesSpinner"
+        android:backgroundTint="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <RadioGroup
+        style="@style/RadioGroupStyle"
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Female" />
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Male"/>
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:id="@+id/rb_both"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Both"/>
+    </RadioGroup>
+
+    <!-- TextView for displaying the selected range -->
+    <TextView
+        style="@style/TextStyle"
+        android:id="@+id/rangeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:text="Age: 0 - 20" />
+
+    <com.google.android.material.slider.RangeSlider
+        style="@style/RangeSliderStyle"
+        android:id="@+id/rangeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="20"
+        android:stepSize="1"/>
+
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply" />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.swipeMode.SwipeFragment"
+    android:paddingBottom="20dp">
+
+    <include
+        android:id="@+id/custom_topbar"
+        layout="@layout/custom_topbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_pic_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:scaleType="center"
+        app:layout_constraintDimensionRatio="2:3"
+        android:src="@drawable/default_profile_image"
+        app:layout_constraintTop_toBottomOf="@id/custom_topbar"
+        android:contentDescription="@string/contentDescription_profile_image" />
+
+    <TextView
+        android:id="@+id/matchTextGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matched"
+        android:textSize="34sp"
+        android:textColor="@color/green_700"
+        android:background="@drawable/green_match_text_lining"
+        android:padding="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_pic_container"
+        android:visibility="gone"
+        android:rotation="-45"/>
+
+    <TextView
+        android:id="@+id/matchTextRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rejected"
+        android:textSize="34sp"
+        android:textColor="@color/red_500_Dark"
+        android:background="@drawable/red_match_text_lining"
+        android:padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_pic_container"
+        android:visibility="gone"
+        android:rotation="45"/>
+
+    <!-- RightSwipe button -->
+    <ImageButton
+        android:id="@+id/btnRightSwipe"
+        android:contentDescription="@string/contentDescription_swipe_right"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/right_swipe_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnLeftSwipe" />
+
+    <!-- Left swipe button -->
+    <ImageButton
+        android:id="@+id/btnLeftSwipe"
+        android:contentDescription="@string/contentDescription_swipe_left"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/left_swipe_button"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnRightSwipe"
+        app:layout_constraintStart_toStartOf="parent"  />
+
+    <!-- Contains, name, age and so on of animal but doubles as profile button. -->
+    <Button
+        android:id="@+id/open_profile_button"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button_background"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRightSwipe"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

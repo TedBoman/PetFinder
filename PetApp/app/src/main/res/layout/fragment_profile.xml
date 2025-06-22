@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.petProfile.PetProfileFragment"
+    style="@style/MessageLogStyle">
+
+    <include
+        android:id="@+id/custom_topbar"
+        layout="@layout/custom_topbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/profilePageImage"
+                android:paddingBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="1:1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_profile_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/pet_profile_picture_descriptor" />
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:contentDescription="@string/contentDescription_swipe_right"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/right_swipe_button"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/profilePageImage"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/AboutGroup"
+                style="@style/RoundedCornersCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profilePageImage"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:paddingBottom="56dp"
+                    android:background="@null">
+
+                    <TextView
+                        android:id="@+id/nameID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyle"
+                        android:textSize="25sp"
+                        android:paddingTop="10dp"
+                        android:layout_margin="4dp"
+                        android:text="Pet Name!"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/aboutText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyle"
+                        android:text="About this"
+                        app:layout_constraintTop_toBottomOf="@id/nameID"/>
+
+                    <TextView
+                        android:id="@+id/dateUploaded"
+                        style="@style/SecondaryTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:layout_margin="4dp"
+                        android:text="Uploaded: "
+                        app:layout_constraintTop_toBottomOf="@id/aboutText"/>
+
+                    <TextView
+                        style="@style/SecondaryTextStyle"
+                        android:id="@+id/birthDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Birthdate"
+                        android:paddingTop="10dp"
+                        android:layout_margin="4dp"
+                        app:layout_constraintBottom_toTopOf="@+id/GenderID"
+                        app:layout_constraintTop_toBottomOf="@+id/dateUploaded" />
+
+                    <TextView
+                        style="@style/SecondaryTextStyle"
+                        android:id="@+id/GenderID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:layout_margin="4dp"
+                        app:layout_constraintTop_toBottomOf="@id/birthDate"
+                        app:layout_constraintBottom_toTopOf="@id/profileDescriptor"
+                        android:text="Gender" />
+
+                    <TextView
+                        style="@style/SecondaryTextStyle"
+                        android:id="@+id/profileDescriptor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginTop="100dp"
+                        android:paddingTop="10dp"
+                        android:text="About"
+                        app:layout_constraintTop_toBottomOf="@+id/GenderID"
+                        tools:layout_editor_absoluteX="-8dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageButton
+        android:id="@+id/btnReturnSwipe"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        style="@style/RoundImageButton"
+        android:contentDescription="@string/title_back"
+        android:src="@drawable/ic_arrow_back_black_24px"
+        app:layout_constraintTop_toTopOf="@id/bottom_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

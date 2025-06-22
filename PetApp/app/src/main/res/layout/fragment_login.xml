@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginFragment"
+    android:padding="20dp"
+    style="@style/FullScreenDialogStyle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/FullScreenDialogStyle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LogInScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:paddingBottom="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circularImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/image_logotype" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:id="@+id/tv_infoText"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_email_and_password"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/circularImage"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/EditTextField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:autofillHints="Enter your email"
+            android:hint="@string/hint_login_email"
+            android:inputType="textEmailAddress"
+            android:paddingTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_infoText"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/EditTextField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:autofillHints="Enter your password"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"/>
+
+        <CheckBox
+            style="@style/CheckBoxStyle"
+            android:id="@+id/checkboxShowPassword"
+            android:layout_height="wrap_content"
+            android:text="@string/show_password"
+            android:layout_width="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_margin="16dp"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LogInScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/checkboxShowPassword"
+            >
+
+            <com.google.android.material.button.MaterialButton
+               style="@style/ButtonStyle"
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text="@string/button_login_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/ButtonStyle"
+                android:id="@+id/btnSwitchToCreate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text="@string/create_account"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnLogin"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/ButtonStyle"
+                android:id="@+id/btnResetPassword"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/forgot_password"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSwitchToCreate"
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CreateAccountScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:paddingBottom="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CreateCircularImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image_logotype" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:id="@+id/tv_CreateInfoText"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_create_Account_displayTEXT"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CreateCircularImage"/>
+
+        <EditText
+            style="@style/EditTextField"
+            android:layout_gravity="center"
+            android:id="@+id/etCreateFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:hint="@string/hint_create_firstname"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_CreateInfoText"
+            android:autofillHints="Enter your first name"/>
+
+        <EditText
+            style="@style/EditTextField"
+            android:id="@+id/etCreateLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:hint="@string/hint_create_lastname"
+            android:inputType="text"
+            android:paddingTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etCreateFirstName"
+            android:autofillHints="Enter last name" />
+
+        <TextView
+            android:id="@+id/BirthdateInfoText"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthdate_InfoText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/et_datePicker"
+            app:layout_constraintBottom_toTopOf="@+id/etCreateEmail"
+            app:layout_constraintTop_toBottomOf="@+id/etCreateLastName" />
+
+        <EditText
+            style="@style/EditTextField"
+            android:id="@+id/et_datePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:focusable="false"
+            android:hint="@string/datePicker_hint_birthdate"
+            android:inputType="date"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/BirthdateInfoText"
+            app:layout_constraintTop_toBottomOf="@id/etCreateLastName"
+            android:autofillHints="Choose date of birth" />
+
+        <EditText
+            style="@style/EditTextField"
+            android:id="@+id/etCreateEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:minHeight="48dp"
+            android:hint="@string/et_email_hint"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_datePicker"
+            android:autofillHints="Enter your email address" />
+
+        <EditText
+            style="@style/EditTextField"
+            android:id="@+id/etCreatePassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/create_password_hint"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/passwordHelpIcon"
+            app:layout_constraintTop_toBottomOf="@id/etCreateEmail"
+            android:autofillHints="Enter password" />
+
+        <ImageButton
+            android:id="@+id/passwordHelpIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/password_info_icon"
+            android:contentDescription="@string/password_info"
+            app:layout_constraintStart_toEndOf="@+id/etCreatePassword"
+            app:layout_constraintTop_toTopOf="@id/etCreatePassword"
+            app:layout_constraintBottom_toBottomOf="@id/etCreatePassword"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            style="@style/EditTextField"
+            android:layout_gravity="center"
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/text_confirm_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etCreatePassword"
+            android:autofillHints="Confirm password" />
+
+            <EditText
+                style="@style/EditTextField"
+                android:layout_gravity="center"
+                android:id="@+id/etModCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/moderator_code_optional"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etConfirmPassword"
+                android:autofillHints="Confirm password" />
+
+        <CheckBox
+            style="@style/CheckBoxStyle"
+            android:id="@+id/checkboxPrivacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etModCode"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvReadPolicy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/textview_Read_Policy"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/checkboxPrivacyPolicy"
+            app:layout_constraintTop_toTopOf="@id/checkboxPrivacyPolicy"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- displays the privacy policy -->
+        <TextView
+            style="@style/SecondaryTextStyle"
+            android:id="@+id/tvPrivacyPolicy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/PrivacyPolicy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicy"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="visible"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/ButtonStyle"
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="@string/create_account"
+            android:background="@drawable/rounded_button_background"
+            app:layout_constraintTop_toBottomOf="@id/checkboxPrivacyPolicy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/ButtonStyle"
+            android:id="@+id/btnSwitchToLogin"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="@string/login_button"
+            android:background="@drawable/rounded_button_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCreateAccount"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

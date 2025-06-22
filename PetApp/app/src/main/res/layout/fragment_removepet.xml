@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.moderator.ModeratorFragment"
+    style="@style/MessageLogStyle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/TextStyle"
+                android:id="@+id/RemovePetText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@+id/Remove_a_pet"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <EditText
+                android:id="@+id/RemovePetSearchQuery"
+                style="@style/SearchBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:hint="@string/search_for_a_pet_to_delete"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:paddingStart="5dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/grey_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RemovePetText" />
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/search_24px"
+                android:scaleType="fitCenter"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toEndOf="@id/RemovePetSearchQuery"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/RemovePetSearchQuery"
+                app:layout_constraintBottom_toBottomOf="@id/RemovePetSearchQuery"
+                android:background="@drawable/rounded_searchbutton"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RemoveRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/searchButton"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        style="@style/RoundImageButton"
+        android:contentDescription="@string/title_back"
+        android:src="@drawable/ic_arrow_back_black_24px"
+        app:layout_constraintTop_toTopOf="@id/bottom_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

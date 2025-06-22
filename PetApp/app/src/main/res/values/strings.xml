@@ -1,0 +1,139 @@
+<resources>
+    <string name="title_application">Happy Paws</string>
+    <string name="title_settings">Settings</string>
+    <string name="app_name">Pet Finder</string>
+    <string name="title_home">Home</string>
+    <string name="title_Match">Match</string>
+    <string name="title_search">Search</string>
+    <string name="title_message">Messages</string>
+    <string name="title_account">Account</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_back">Back</string>
+    <string name="pet_profile_picture_descriptor">A picture of the pet</string>
+    <string name="PrivacyPolicy">By agreeing to this policy you agree to and confirm that you have read the following:
+        \n\n- You allow us to store any information you enter such email, hashed version of your password, profile info, pictures and location.
+        \n\n- We only use this data for the intended purposes of the app.
+        \n\n- We process your personal data based on your consent, which you provide by agreeing to this privacy policy. You have the right to withdraw your consent at any time.
+        \n\n- You have the right to delete your account at any time.
+        \n\n Happy Paws pet finder 2024.
+    </string>
+    <string name="passwordInfoText">Your password must include the following:
+        \n\n- At least 9 characters.
+        \n\n- At least 1 letter.
+        \n\n- At least 1 special character.
+        \n\n- Mixed upper and lower case letters.
+    </string>
+    <string name="create_account">Create account</string>
+    <string name="login_button">Login</string>
+    <string name="textview_Read_Policy">I have read and agree to the Privacy Policy</string>
+    <string name="create_password_hint">PASSWORD</string>
+    <string name="et_email_hint">EMAIL</string>
+    <string name="datePicker_hint_birthdate">BIRTHDATE</string>
+    <string name="birthdate_InfoText">BIRTHDATE:</string>
+    <string name="hint_create_lastname">LAST NAME</string>
+    <string name="hint_create_firstname">FIRST NAME</string>
+    <string name="text_create_Account_displayTEXT">ENTER YOUR DETAILS TO CREATE AN ACCOUNT</string>
+    <string name="button_login_text">Log in</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="hint_login_email">EMAIL</string>
+    <string name="enter_your_email_and_password">ENTER YOUR EMAIL AND PASSWORD</string>
+    <string name="text_confirm_password">CONFIRM YOUR PASSWORD</string>
+    <string name="contentDescription_send_message">Send message</string>
+    <string name="contentDescription_swipe_right">Swipe right</string>
+    <string name="contentDescription_swipe_left">Swipe left</string>
+    <string name="contentDescription_profile_image">profile image</string>
+    <string name="hint_write_message">Type your message here</string>
+    <string name="show_password">SHOW PASSWORD</string>
+    <string name="preferences_title">Preferences</string>
+    <string name="preferences_info">Here you can choose which pets you want to receive notifications about</string>
+    <string name="not_logged_in">Not logged in!</string>
+    <string name="password_reset_toast_success">Email Sent!</string>
+    <string name="password_reset_toast_failure">Failed to send email!</string>
+    <string name="null_email_toast">Email not found, unknown error!</string>
+    <string name="invalid_email">Invalid Email Address!</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="happy_paws">Happy Paws</string>
+    <string name="add_new_pet">Add new pet</string>
+    <string name="remove_a_pet">Remove a pet</string>
+    <string name="welcome_moderator">Welcome Moderator!</string>
+    <string name="returnText">Return</string>
+    <string name="default_age_default_name">Default age, default name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date">Date:</string>
+    <string name="about">About:</string>
+    <string name="image">image</string>
+    <string name="upload">Upload</string>
+    <string name="add">Add</string>
+    <string name="name">Name:</string>
+    <string name="race">Race:</string>
+    <string name="settings">Settings</string>
+    <string name="preferences">Preferences</string>
+    <string name="notification_filter">Notification filter</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_account">Delete account</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="moderator_options">Moderator options</string>
+    <string name="create_moderator_code">Create moderator code</string>
+    <string name="delete_moderator_code">Delete moderator code</string>
+    <string name="created_by">Created By:</string>
+    <string name="delete">Delete</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="age_0_20">Age: 0 – 20</string>
+    <string name="picture_of_the_animal_shelter">Picture of the animal sheleter</string>
+    <string name="happy_paws_home_title">Happy Paws Animal Shelter</string>
+    <string name="animal_shelter_description">Happy Paws offers a compassionate haven for cats and dogs awaiting adoption. We rescue, rehabilitate, and rehome animals in need, prioritizing their well-being. Join us in our mission to find loving families for our furry friends and create lasting, joyful pet-human connections.</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="search_for_a_pet_to_delete">Search for a pet to delete…</string>
+    <string name="search_for_your_friend">Search for your friend…</string>
+    <string name="search_filter">Search filter</string>
+    <string name="password_info">Password info</string>
+    <string name="moderator_code_optional">MODERATOR CODE (optional)</string>
+    <string name="load_more">Load More</string>
+    <string name="here_you_can_remove_matches_with_pets">Here you can remove matches with pets</string>
+    <string name="both">Both</string>
+    <string name="age_range">Age range</string>
+    <string name="saved_message_list">saved_message_list</string>
+    <string name="account_prefs">AccountPrefs</string>
+    <string name="account_prefs_first_name">firstname</string>
+    <string name="account_prefs_last_name">lastname</string>
+    <string name="account_prefs_birthdate">birthdate</string>
+    <string name="account_prefs_role">role</string>
+    <string name="account_prefs_role_admin">admin</string>
+    <string name="account_prefs_role_user">user</string>
+
+
+    <string name="swipe_cache">swipe_cache</string>
+    <string name="swipe_cache_time">swipe_cache_time</string>
+    <string name="swipe_cache_filtered_entries">filtered_profiles_cache</string>
+
+    <string name="message_cache">message_cache</string>
+    <string name="message_cache_entries">message_cache_entries</string>
+    <string name="message_cache_entries_paths">message_cache_entries_paths</string>
+
+    <string name="user_cache">user_cache</string>
+    <string name="user_cache_entries">user_cache_entries</string>
+
+    <string name="match_cache">match_cache</string>
+    <string name="match_cache_entries">match_cache_entries</string>
+
+    <string name="rejected_cache">rejected_cache</string>
+    <string name="rejected_cache_entries">rejected_cache_entries</string>
+
+    <string name="filter_preferences">FilterPrefs</string>
+    <string name="animal_cache">animal_cache</string>
+    <string name="message_enter_conversation_argument">chatItem</string>
+
+    <string name="matched">MATCH</string>
+    <string name="rejected">REJECT</string>
+    <string name="open_profile">Open profile</string>
+
+
+    <string-array name="species">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>All</item>
+    </string-array>
+</resources>

@@ -1,0 +1,69 @@
+INFO    | Storing crashdata in: /tmp/android-linus/emu-crash-34.2.15.db, detection is enabled for process: 86107
+INFO    | Android emulator version 34.2.15.0 (build_id 11906825) (CL:N/A)
+INFO    | Found systemPath /home/linus/.local/share/Android/Sdk/system-images/android-34/google_apis/x86_64/
+INFO    | Storing crashdata in: /tmp/android-linus/emu-crash-34.2.15.db, detection is enabled for process: 86107
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+INFO    | Warning: Could not find the Qt platform plugin "wayland" in "/home/linus/.local/share/Android/Sdk/emulator/lib64/qt/plugins" ((null):0, (null))
+INFO    | Warning: could not connect to display  ((null):0, (null))
+INFO    | Warning: From 6.5.0, xcb-cursor0 or libxcb-cursor0 is needed to load the Qt xcb platform plugin. ((null):0, (null))
+INFO    | Info: Could not load the Qt platform plugin "xcb" in "/home/linus/.local/share/Android/Sdk/emulator/lib64/qt/plugins" even though it was found. ((null):0, (null))
+Fatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: offscreen, xcb, vnc, linuxfb, minimal.
+ ((null):0, (null))
+INFO    | Fatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: offscreen, xcb, vnc, linuxfb, minimal.
+ ((null):0, (null))
+[86118:86118:20240616,141933.694941:ERROR elf_dynamic_array_reader.h:64] tag not found
+[86118:86118:20240616,141933.696437:ERROR process_memory_range.cc:75] read out of range
+[86118:86118:20240616,141933.698243:ERROR file_io_posix.cc:144] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[86118:86118:20240616,141933.698291:ERROR file_io_posix.cc:144] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[86118:86118:20240616,141933.699346:ERROR process_memory_range.cc:75] read out of range
+[86118:86118:20240616,141933.699382:ERROR process_memory_range.cc:75] read out of range
+INFO    | Storing crashdata in: /tmp/android-linus/emu-crash-34.2.15.db, detection is enabled for process: 86571
+INFO    | Android emulator version 34.2.15.0 (build_id 11906825) (CL:N/A)
+INFO    | Found systemPath /home/linus/.local/share/Android/Sdk/system-images/android-34/google_apis/x86_64/
+INFO    | Storing crashdata in: /tmp/android-linus/emu-crash-34.2.15.db, detection is enabled for process: 86571
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+INFO    | Warning: Could not find the Qt platform plugin "wayland" in "/home/linus/.local/share/Android/Sdk/emulator/lib64/qt/plugins" ((null):0, (null))
+INFO    | Warning: could not connect to display  ((null):0, (null))
+INFO    | Warning: From 6.5.0, xcb-cursor0 or libxcb-cursor0 is needed to load the Qt xcb platform plugin. ((null):0, (null))
+INFO    | Info: Could not load the Qt platform plugin "xcb" in "/home/linus/.local/share/Android/Sdk/emulator/lib64/qt/plugins" even though it was found. ((null):0, (null))
+Fatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: offscreen, xcb, vnc, linuxfb, minimal.
+ ((null):0, (null))
+INFO    | Fatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: offscreen, xcb, vnc, linuxfb, minimal.
+ ((null):0, (null))
+[86582:86582:20240616,142006.071129:ERROR elf_dynamic_array_reader.h:64] tag not found
+[86582:86582:20240616,142006.072097:ERROR process_memory_range.cc:75] read out of range
+[86582:86582:20240616,142006.073390:ERROR file_io_posix.cc:144] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[86582:86582:20240616,142006.073428:ERROR file_io_posix.cc:144] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[86582:86582:20240616,142006.074022:ERROR process_memory_range.cc:75] read out of range
+[86582:86582:20240616,142006.074052:ERROR process_memory_range.cc:75] read out of range
+INFO    | Storing crashdata in: /tmp/android-linus/emu-crash-34.2.15.db, detection is enabled for process: 90611
+INFO    | Android emulator version 34.2.15.0 (build_id 11906825) (CL:N/A)
+INFO    | Found systemPath /home/linus/.local/share/Android/Sdk/system-images/android-34/google_apis/x86_64/
+INFO    | Storing crashdata in: /tmp/android-linus/emu-crash-34.2.15.db, detection is enabled for process: 90611
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+INFO    | Warning: Could not find the Qt platform plugin "wayland" in "/home/linus/.local/share/Android/Sdk/emulator/lib64/qt/plugins" ((null):0, (null))
+INFO    | Warning: could not connect to display  ((null):0, (null))
+INFO    | Warning: From 6.5.0, xcb-cursor0 or libxcb-cursor0 is needed to load the Qt xcb platform plugin. ((null):0, (null))
+INFO    | Info: Could not load the Qt platform plugin "xcb" in "/home/linus/.local/share/Android/Sdk/emulator/lib64/qt/plugins" even though it was found. ((null):0, (null))
+Fatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: offscreen, xcb, vnc, linuxfb, minimal.
+ ((null):0, (null))
+INFO    | Fatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: offscreen, xcb, vnc, linuxfb, minimal.
+ ((null):0, (null))
+[90625:90625:20240616,142753.024583:ERROR elf_dynamic_array_reader.h:64] tag not found
+[90625:90625:20240616,142753.025360:ERROR process_memory_range.cc:75] read out of range
+[90625:90625:20240616,142753.026339:ERROR file_io_posix.cc:144] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[90625:90625:20240616,142753.026370:ERROR file_io_posix.cc:144] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[90625:90625:20240616,142753.026842:ERROR process_memory_range.cc:75] read out of range
+[90625:90625:20240616,142753.026869:ERROR process_memory_range.cc:75] read out of range

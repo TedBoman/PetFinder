@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_swipe">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.petfinder.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.petfinder.ui.petProfile.PetProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.petfinder.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_swipe"
+        android:name="com.example.petfinder.ui.swipeMode.SwipeFragment"
+        android:label="@string/title_Match"
+        tools:layout="@layout/fragment_swipe">
+        <action
+            android:id="@+id/action_swipe_to_mod"
+            app:destination="@+id/navigation_moderator"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.petfinder.ui.messages.MessageFragment"
+        android:label="@string/title_message"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.petfinder.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_moderator"
+        android:name="com.example.petfinder.ui.moderator.ModeratorFragment"
+        tools:layout="@layout/moderator_fragment"/>
+
+
+
+</navigation>

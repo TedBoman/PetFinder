@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functions.NotificationFragment"
+    style="@style/MessageLogStyle">
+
+    <include
+        android:id="@+id/custom_topbar"
+        layout="@layout/custom_topbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/custom_topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RoundedCornersCardView">
+
+                    <TextView
+                        android:id="@+id/preferences_info"
+                        style="@style/TextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preferences_info"
+                        android:textAlignment="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/RaceGroupNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_EditRace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyle"
+                        android:text="@string/race"
+                        android:gravity="center" />
+
+                    <Spinner
+                        android:id="@+id/NotificationRaceSpinner"
+                        android:backgroundTint="@color/teal_200"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/notification_RadioGroup"
+                    style="@style/RadioGroupStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        style="@style/TextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender"/>
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"/>
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"/>
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:id="@+id/rb_both"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/both"/>
+                </RadioGroup>
+
+                <!-- TextView for displaying the selected range -->
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_margin="16dp"
+                    android:id="@+id/rangeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20sp"
+                    android:text="@string/age_0_20" />
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/NotificationRangeSlider"
+                    style="@style/RangeSliderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/age_range"
+                    android:stepSize="1"
+                    android:valueFrom="0"
+                    android:valueTo="20" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr">
+
+                    <Button
+                        android:id="@+id/cancel_button"
+                        style="@style/ButtonStyle"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel" />
+
+                    <Button
+                        android:id="@+id/apply_button"
+                        style="@style/ButtonStyle"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/apply" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

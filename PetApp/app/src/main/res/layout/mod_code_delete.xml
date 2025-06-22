@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ModCodeItem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_CodeID"
+            style="@style/SecondaryTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Code ID"/>
+
+        <TextView
+            android:id="@+id/tv_CreatedByID"
+            style="@style/SecondaryTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/created_by"
+            app:layout_constraintTop_toBottomOf="@id/tv_CodeID"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            style="@style/SecondaryTextStyle"
+            android:id="@+id/tv_CreatedByUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_CreatedByID"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Created by FirstName LastName"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            style="@style/ButtonStyle"
+            android:layout_height="0dp"
+            android:layout_margin="6dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:text="@string/delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

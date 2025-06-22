@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option1"
+        android:title="Reset Password"/>
+    <item
+        android:id="@+id/option2"
+        android:title="Edit Profile"/>
+    <!-- Add more menu items as needed -->
+</menu>

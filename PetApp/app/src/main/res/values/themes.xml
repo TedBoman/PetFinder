@@ -1,0 +1,125 @@
+<resources>
+    <style name="Theme.PetFinder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/green_200</item>
+        <item name="colorSecondaryVariant">@color/green_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="colorSurface">@color/grey_300</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorError">@color/red_500_Light</item>
+    </style>
+
+    <style name="RadioGroupStyle" parent="ThemeOverlay.MyApp.RadioGroup">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MyApp.RadioGroup</item>
+    </style>
+
+    <style name="ThemeOverlay.MyApp.RadioGroup" parent="">
+        <item name="colorPrimary">@color/blue_500</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textSize">12sp</item>
+        <item name="buttonTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="RangeSliderStyle" parent="Widget.MaterialComponents.Slider">
+        <item name="trackHeight">3dp</item>
+        <item name="haloColor">?attr/colorPrimary</item>
+        <item name="haloRadius">20dp</item>
+        <item name="thumbColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="MessageLogStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/message_background_light</item>
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+
+    <style name="RoundedCornersCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/grey_300</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="AnimalItemInfoBar" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/semi_transparent_light_gray</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="RoundImageButton" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="SearchBarStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="boxStrokeColor">?attr/colorPrimary</item>
+        <item name="hintTextColor">?attr/colorPrimary</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="DialogSwoosh" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.PetFinder">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/DialogSwoosh</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.PetFinder">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/DialogSwoosh</item>
+    </style>
+
+    <style name="TextStyle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="SecondaryTextStyle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="EditTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">?attr/colorPrimary</item>
+        <item name="hintTextColor">?attr/colorPrimary</item>
+        <item name="android:textColorHint">@color/grey_blue_hint</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+</resources>
